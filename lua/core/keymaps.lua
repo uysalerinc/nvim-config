@@ -5,10 +5,45 @@ vim.keymap.set("n", " ", "<Nop>", { silent = true, remap = false}) -- makes sure
 vim.g.mapleader = " "                                              -- set space as leader
 
 local keymaps = {
+            -- Normal --
+
     -- Save and Quit Maps
     {'n' , 'qq', ':q!<cr>', 'Quit'},
     {'n' , 'qw', ':wq<cr>', 'Save and Quit'},
     {'n' , 'ww', ':w<cr>', 'Save'},
+
+    -- Window Movement
+    {'n' , '<C-h>', '<C-w>h', 'Move to left window'},
+    {'n' , '<C-l>', '<C-w>l', 'Move to right window'},
+    {'n' , '<C-j>', '<C-w>j', 'Move to window below'},
+    {'n' , '<C-k>', '<C-w>k', 'Move to window above'},
+--   {'n' , '<C-Left>', '<C-w>h', 'Move to left window'},
+--   {'n' , '<C-Right>', '<C-w>l', 'Move to right window'},
+--   {'n' , '<C-Down>', '<C-w>j', 'Move to window below'},
+--   {'n' , '<C-Up>', '<C-w>k', 'Move to window above'},
+
+    -- Resize
+    {'n' , '<C-Up>', ':resize +2<cr>', 'horizontal resize up'},
+    {'n' , '<C-Down>', ':resize -2<cr>', 'horizontal resize down'},
+    {'n' , '<C-Right>', ':vertical resize +2<cr>', 'vertical resize up'},
+    {'n' , '<C-Left>', ':vertical resize -2<cr>', 'vertical resize down'},
+
+    -- Buffers
+    {'n', '<leader>bl', ':bnext<cr>', 'next buffer'},
+    {'n', '<leader>bh', ':bprevious<cr>', 'previous buffer'},
+    {'n', '<leader>bk', ':bd<cr>', 'kill buffer'},
+
+            -- Visual --
+
+   -- Text Movement
+    {'v' , '<A-j>', ":m '>+1<cr>gv-gv", 'Quit'},
+    {'v' , '<A-k>', ":m '>-2<cr>gv-gv", 'Quit'},
+
+            -- Insert --
+
+    -- Fast exit insert mode 
+    {'i' , 'jk', '<ESC>', 'Fast exit with jk'},
+
 
     {'n', '<leader>f', ':noh<cr>', 'clear search highlight'},
 }
