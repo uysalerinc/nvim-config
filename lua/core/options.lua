@@ -5,7 +5,7 @@ local vcmd = vim.cmd
 local options = {
 
     mouse = 'a',                                        -- lets you use the mouse, but in vim who need a mouse?!
-    termguicolors = true,                                -- set term gui colors
+    termguicolors = true,                               -- set term gui colors
 
     conceallevel = 0,                                   -- make ` visible in markdown files
 
@@ -13,7 +13,7 @@ local options = {
     pumheight = 10,                                    	-- pop-up menu height
 
     expandtab = true,                                   -- Tabs to spaces, simple.
-    softtabstop = 4,                                        -- Number of spaces for tabs.
+    softtabstop = 4,                                    -- Number of spaces for tabs.
     shiftwidth = 4,                                     -- number of spaces to use for each step of (auto)indent.
     smarttab = true,                                    -- a Tab in front of a line insterts blanks accorind to shiftwidth.
 
