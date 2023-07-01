@@ -11,11 +11,4 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local Util = require("lazy.core.util")
-local M = {}
-
-function M.has(plugin)
-    return require("lazy.core.config").plugins[plugin] ~= nil
-end
-
 require("lazy").setup('plugins')
