@@ -1,2 +1,4 @@
+-- Always Call Config First!!
 require("config")
-require("core.lazy")
+-- Other --
+require("plugins.activate_plugins")
