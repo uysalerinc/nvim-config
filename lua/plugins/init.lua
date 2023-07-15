@@ -4,6 +4,7 @@ local plugins = {
     'lsp',
     'telescope',
     'colorschemas',
+    'which-key',
 
 }
 

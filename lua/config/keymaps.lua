@@ -46,10 +46,6 @@ local keymaps = {
 
     {'n', '<leader>f', ':noh<cr>', 'clear search highlight'},
 
-
-            -- Plugin Maps
-    --Telescope
-    { 'n', '<leader>t', ':Telescope fd<cr>', 'Find Files'},
 }
 
 function M.keymap(table)

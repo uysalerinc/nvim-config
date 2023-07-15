@@ -1,4 +1,4 @@
-local ok, wk = pcall(require, 'which_key')
+local ok, wk = pcall(require, 'which-key')
 if not ok then
     return
 end
@@ -25,7 +25,7 @@ local conf = {
   },
   -- add operators that will trigger motion and text object completion
   -- to enable all native operators, set the preset / operators plugin above
-  operators = { gc = "Comments" },
+  -- operators = { gc = "Comments" },
   key_labels = {
     -- override the label used to display some keys. It doesn't effect WK in any other way.
     -- For example:
@@ -33,9 +33,9 @@ local conf = {
     -- ["<cr>"] = "RET",
     -- ["<tab>"] = "TAB",
   },
-  motions = {
-    count = true,
-  },
+  --motions = {
+  --  count = true,
+  --},
   icons = {
     breadcrumb = "»", -- symbol used in the command line area that shows your active key combo
     separator = "➜", -- symbol used between a key and it's label
@@ -92,7 +92,7 @@ local conf = {
   },
 }
 
-local opts =  {
+local normal_opts = {
   mode = "n", -- NORMAL mode
   -- prefix: use "<leader>f" for example for mapping everything related to finding files
   -- the prefix is prepended to every mapping part of `mappings`
@@ -104,4 +104,13 @@ local opts =  {
   expr = false, -- use `expr` when creating keymaps
 }
 
-wk.setup(conf)
+local normal_mappings = {
+    t = {
+        name = "+Telescope",
+        f = { "<cmd>Telescope find_files<cr>", "Find File" },
+        r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
+        n = { "<cmd>enew<cr>", "New File" },
+        e = "Edit File",
+    },
+}
+wk.register(normal_mappings, normal_opts)
