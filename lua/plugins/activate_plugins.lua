@@ -1,5 +1,8 @@
 local plugins = {
-    "lazy",
+    'lazy',
+    'cmp',
+    'lsp-zero',
+    'mason',
 
 }
 
