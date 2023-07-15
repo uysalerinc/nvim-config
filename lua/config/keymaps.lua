@@ -44,8 +44,12 @@ local keymaps = {
     -- Fast exit insert mode 
     {'i' , 'jk', '<ESC>', 'Fast exit with jk'},
 
-
     {'n', '<leader>f', ':noh<cr>', 'clear search highlight'},
+
+
+            -- Plugin Maps
+    --Telescope
+    { 'n', '<leader>t', ':Telescope fd<cr>', 'Find Files'},
 }
 
 function M.keymap(table)

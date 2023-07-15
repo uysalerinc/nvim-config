@@ -1,0 +1,5 @@
+require('plugins.lsp.lsp-lines')
+require('plugins.lsp.lsp-signature')
+require('plugins.lsp.lsp-zero')
+require('plugins.lsp.mason')
+require('plugins.lsp.trouble')

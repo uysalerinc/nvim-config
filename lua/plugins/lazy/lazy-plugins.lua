@@ -6,6 +6,9 @@ return {
         'VonHeikemen/lsp-zero.nvim',
         dependencies = {
             'neovim/nvim-lspconfig',
+            'folke/trouble.nvim',
+            'ray-x/lsp_signature.nvim',
+            'Maan2003/lsp_lines.nvim',
             {'williamboman/mason.nvim', config = true},
             'williamboman/mason-lspconfig.nvim',
         }
@@ -24,6 +27,18 @@ return {
             'rafamadriz/friendly-snippets',
         },
     },
+
+    {
+        'nvim-telescope/telescope.nvim',
+        dependencies = {
+            'nvim-lua/plenary.nvim'
+        }
+    },
+            -- Color Schemas
+    {
+        'catppuccin/nvim', name = 'catppuccin', priority = 1000
+    },
+
 
     {'folke/which-key.nvim', opts = {}},
 

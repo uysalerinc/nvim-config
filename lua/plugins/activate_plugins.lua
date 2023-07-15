@@ -1,8 +1,9 @@
 local plugins = {
     'lazy',
     'cmp',
-    'lsp-zero',
-    'mason',
+    'lsp',
+    'telescope',
+    'colorschemas',
 
 }
 
