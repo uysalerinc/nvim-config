@@ -61,3 +61,6 @@ end
 
 vcmd "set iskeyword+=-"                                 -- adds "-" as keyword for assume variables in kebab-case as a word
 vcmd "set shortmess+=c"                                 --  
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

@@ -8,6 +8,9 @@ local plugins = {
     'treesitter',
     'autopairs',
     'comment',
+    'gitsigns',
+    'nvim-tree',
+    'bufferline',
 
 }
 

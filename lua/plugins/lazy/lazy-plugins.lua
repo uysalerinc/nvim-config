@@ -1,7 +1,13 @@
 return {
     'nvim-lua/plenary.nvim',
+    'nvim-tree/nvim-tree.lua',
     'nvim-tree/nvim-web-devicons',
     'numToStr/Comment.nvim',
+
+    {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
+
+    -- Git Stuff
+    'lewis6991/gitsigns.nvim',
 
     { -- LSP
         'VonHeikemen/lsp-zero.nvim',
@@ -14,6 +20,7 @@ return {
             'williamboman/mason-lspconfig.nvim',
         }
     },
+
     { -- Auto Completion
         'hrsh7th/nvim-cmp',
         event = 'InsertEnter',

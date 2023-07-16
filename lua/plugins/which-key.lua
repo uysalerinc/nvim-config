@@ -118,6 +118,15 @@ local normal_mappings = {
             local lines = require('lsp_lines')
             lines.toggle()
         end, "Toggle LSP Lines"},
+    },
+    g = {
+      name = "+Git",
+      b = { "<cmd>Gitsigns toggle_current_line_blame<CR>", "Toggle Blame"},
+      s = { "<cmd>Telescope git_status <cr>", "Git Status"},
+      c = { "<cmd>Telescope git_commits <cr>", "Git Commits"},
+
+
     }
 }
+wk.setup(conf)
 wk.register(normal_mappings, normal_opts)
