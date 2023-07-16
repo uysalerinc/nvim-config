@@ -7,6 +7,9 @@ return {
 
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
+    'norcalli/nvim-colorizer.lua',
+    'lukas-reineke/indent-blankline.nvim',
+
     -- Git Stuff
     'lewis6991/gitsigns.nvim',
 

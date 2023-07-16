@@ -42,6 +42,7 @@ dashboard.section.header.val = {
 
 dashboard.section.buttons.val = {
     dashboard.button('e', "New file", ":ene | startinsert <cr>"),
+    dashboard.button('f', "Find Files", ":Telescope find_files<cr>"),
 
     dashboard.button('q', "Quit Nvim", ":qa<cr>"),
 }

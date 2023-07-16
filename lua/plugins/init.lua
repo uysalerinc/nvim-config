@@ -14,7 +14,8 @@ local plugins = {
     'lualine',
     'toggleterm',
     'alpha',
-
+    'colorizer',
+    'indentline',
 }
 
 for _, plugin in pairs(plugins) do
