@@ -112,5 +112,12 @@ local normal_mappings = {
         n = { "<cmd>enew<cr>", "New File" },
         e = "Edit File",
     },
+    l = {
+        name ="+LSP",
+        l = { function () 
+            local lines = require('lsp_lines')
+            lines.toggle()
+        end, "Toggle LSP Lines"},
+    }
 }
 wk.register(normal_mappings, normal_opts)

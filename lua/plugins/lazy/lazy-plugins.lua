@@ -1,6 +1,7 @@
 return {
     'nvim-lua/plenary.nvim',
     'nvim-tree/nvim-web-devicons',
+    'numToStr/Comment.nvim',
 
     { -- LSP
         'VonHeikemen/lsp-zero.nvim',
@@ -28,19 +29,34 @@ return {
         },
     },
 
+    { --Autopairs
+        'windwp/nvim-autopairs',
+        event = 'InsertEnter',
+        opts = {},
+    },
+
     {
         'nvim-telescope/telescope.nvim',
         dependencies = {
             'nvim-lua/plenary.nvim'
         }
     },
+
+    {
+        'nvim-treesitter/nvim-treesitter',
+        build = ':TSUpdate',
+        dependencies = {
+            'nvim-treesitter/nvim-treesitter-refactor',
+            'nvim-treesitter/nvim-treesitter-context',
+            'JoosepAlviste/nvim-ts-context-commentstring',
+        }
+
+    },
             -- Color Schemas
     {
         'catppuccin/nvim', name = 'catppuccin', priority = 1000
     },
 
-
-    --{'folke/which-key.nvim', lazy = true,},
     {
   "folke/which-key.nvim",
   event = "VeryLazy",

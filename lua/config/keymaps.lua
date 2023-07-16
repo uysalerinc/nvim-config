@@ -1,7 +1,8 @@
 local M = {}
 
 -- Set Space to Leader
-vim.keymap.set("n", " ", "<Nop>", { silent = true, remap = false}) -- makes sure space cant take any other map
+--vim.keymap.set("n", " ", "<Nop>", { silent = true, remap = false}) -- makes sure space cant take any other map
+vim.api.nvim_set_keymap("", "<Space>", "<Nop>", {noremap = true, silent= true});
 vim.g.mapleader = " "                                              -- set space as leader
 
 local keymaps = {

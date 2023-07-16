@@ -5,6 +5,9 @@ local plugins = {
     'telescope',
     'colorschemas',
     'which-key',
+    'treesitter',
+    'autopairs',
+    'comment',
 
 }
 
