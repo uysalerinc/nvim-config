@@ -12,6 +12,8 @@ local plugins = {
     'nvim-tree',
     'bufferline',
     'lualine',
+    'toggleterm',
+    'alpha',
 
 }
 

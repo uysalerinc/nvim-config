@@ -3,6 +3,7 @@ return {
     'nvim-tree/nvim-tree.lua',
     'nvim-tree/nvim-web-devicons',
     'numToStr/Comment.nvim',
+    'akinsho/toggleterm.nvim',
 
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
@@ -64,6 +65,12 @@ return {
     {'catppuccin/nvim', name = 'catppuccin', priority = 1000},
 
     {'nvim-lualine/lualine.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}, opts = true},
+
+    {
+        'goolord/alpha-nvim',
+        evet = 'VimEnter',
+        dependencies = {'nvim-tree/nvim-web-devicons'},
+    },
 
     {
   "folke/which-key.nvim",
