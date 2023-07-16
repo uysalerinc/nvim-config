@@ -18,6 +18,7 @@ return {
             'Maan2003/lsp_lines.nvim',
             {'williamboman/mason.nvim', config = true},
             'williamboman/mason-lspconfig.nvim',
+            'jose-elias-alvarez/null-ls.nvim',
         }
     },
 
@@ -60,9 +61,9 @@ return {
 
     },
             -- Color Schemas
-    {
-        'catppuccin/nvim', name = 'catppuccin', priority = 1000
-    },
+    {'catppuccin/nvim', name = 'catppuccin', priority = 1000},
+
+    {'nvim-lualine/lualine.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}, opts = true},
 
     {
   "folke/which-key.nvim",

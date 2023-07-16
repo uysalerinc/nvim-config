@@ -11,6 +11,7 @@ local plugins = {
     'gitsigns',
     'nvim-tree',
     'bufferline',
+    'lualine',
 
 }
 
