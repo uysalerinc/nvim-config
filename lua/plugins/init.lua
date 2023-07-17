@@ -16,6 +16,8 @@ local plugins = {
     'alpha',
     'colorizer',
     'indentline',
+    'oil',
+--    'copilot',
 }
 
 for _, plugin in pairs(plugins) do

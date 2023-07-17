@@ -4,6 +4,7 @@ return {
     'nvim-tree/nvim-web-devicons',
     'numToStr/Comment.nvim',
     'akinsho/toggleterm.nvim',
+    'stevearc/oil.nvim',
 
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
@@ -25,6 +26,11 @@ return {
             'jose-elias-alvarez/null-ls.nvim',
         }
     },
+    --[[ {
+        'zbirenbaum/copilot.lua',
+        cmd = 'Copilot',
+        event= 'InsertEnter',
+    }, ]]
 
     { -- Auto Completion
         'hrsh7th/nvim-cmp',
@@ -66,6 +72,7 @@ return {
     },
             -- Color Schemas
     {'catppuccin/nvim', name = 'catppuccin', priority = 1000},
+    {'dracula/vim', lazy = false},
 
     {'nvim-lualine/lualine.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}, opts = true},
 
