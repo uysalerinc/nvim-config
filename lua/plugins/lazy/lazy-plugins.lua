@@ -5,7 +5,6 @@ return {
     'numToStr/Comment.nvim',
     'akinsho/toggleterm.nvim',
     'stevearc/oil.nvim',
-    'mfussenegger/nvim-dap',
 
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
@@ -46,6 +45,12 @@ return {
             'williamboman/mason-lspconfig.nvim',
             'jose-elias-alvarez/null-ls.nvim',
         }
+    },
+
+    'mfussenegger/nvim-dap',
+    {
+        'rcarriga/nvim-dap-ui',
+        dependencies = 'mfussenegger/nvim-dap',
     },
     --[[ {
         'zbirenbaum/copilot.lua',

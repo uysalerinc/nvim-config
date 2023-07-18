@@ -14,7 +14,7 @@ mason.setup({
     -- - "skip" (doesn't modify PATH)
     ---@type '"prepend"' | '"append"' | '"skip"'
     PATH = "prepend",
-
+    --
     -- Controls to which degree logs are written to the log file. It's useful to set this to vim.log.levels.DEBUG when
     -- debugging issues with package installations.
     log_level = vim.log.levels.INFO,
