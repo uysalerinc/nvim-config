@@ -2,6 +2,10 @@ local ok, wk = pcall(require, 'which-key')
 if not ok then
     return
 end
+local c_ok, crates = pcall(require, 'crates')
+if not c_ok then
+    print("Something wrong with crates")
+end
 
 local conf = {
   plugins = {
@@ -143,7 +147,44 @@ local normal_mappings = {
         k = { "<cmd>RustMoveItemUp<cr>", "Move Item Up"},
         j = { "<cmd>RustMoveItemDown<cr>", "Move Item Down"},
         h = {"<cmd>RustHoverActions<cr> <cmd>RustHoverActions<cr>", "Hover Actions Trigger"},
-        c = { "<cmd>RustOpenCargo<cr>", "Open Cargo.toml"},
+        p = { "<cmd>RustParentModule<cr>", "Go to Parent Module"},
+        c = {
+            name ="+Cargo",
+            o ={"<cmd>RustOpenCargo<cr>", "Open Cargo.toml"},
+            u ={function ()
+                crates.upgrade_crate()
+            end, "Upgrade Crate"},
+            U ={function ()
+                crates.upgrade_all_crates()
+            end, "Upgrade All Crates"},
+            D ={function ()
+                crates.open_documentation()
+            end, "Open Documentation"},
+            R ={function ()
+                crates.open_repository()
+            end, "Open Repository"},
+            e ={function ()
+                crates.expand_plain_crate_to_inline_table()
+            end, "Expand Crate to Inline Table"},
+            E ={function ()
+                crates.extract_crate_into_table()
+            end, "Extract Crate Into Table"},
+            v ={function ()
+                crates.show_versions_popup()
+                crates.show_versions_popup()
+            end, "Versions"},
+            f ={function ()
+                crates.show_features_popup()
+                crates.show_features_popup()
+            end, "Features"},
+            d ={function ()
+                crates.show_dependencies_popup()
+                crates.show_dependencies_popup()
+            end, "Dependencies"},
+            t ={function ()
+                crates.toggle()
+            end, "Toggle Crates"},
+        },
     },
 }
 wk.setup(conf)

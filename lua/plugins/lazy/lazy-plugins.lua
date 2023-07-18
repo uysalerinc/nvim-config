@@ -27,6 +27,10 @@ return {
             'neovim/nvim-lspconfig',
         },
     },
+    {
+        'Saecki/crates.nvim',
+        ft = {'rust', 'toml'},
+    },
 
     -- Git Stuff
     'lewis6991/gitsigns.nvim',
