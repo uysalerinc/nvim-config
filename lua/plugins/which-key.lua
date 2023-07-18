@@ -138,6 +138,7 @@ local normal_mappings = {
             sidebar.open()
         end, "Open sidebar" },
         n = { "<cmd>DapStepOut<cr>", "Next Step"},
+        r = { "<cmd>DapContinue<cr>", "Start Debugging"},
     },
     r = {
         name ="+Rust",
