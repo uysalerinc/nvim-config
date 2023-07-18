@@ -2,6 +2,15 @@ local ok, ts_conf = pcall(require, 'nvim-treesitter.configs')
 if not ok then
     return
 end
+
+-- vim.cmd [[highlight rainbowcol6 guifg=#E06C75 gui=nocombine]]
+-- vim.cmd [[highlight rainbowcol5 guifg=#E5C07B gui=nocombine]]
+vim.cmd [[highlight rainbowcol4 guifg=#98C379 gui=nocombine]]
+vim.cmd [[highlight rainbowcol3 guifg=#56B6C2 gui=nocombine]]
+vim.cmd [[highlight rainbowcol2 guifg=#61AFEF gui=nocombine]]
+vim.cmd [[highlight rainbowcol1 guifg=#C678DD gui=nocombine]]
+
+
 ts_conf.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
   ensure_installed = { "c", "lua", "vim", "vimdoc", "query" },
@@ -46,6 +55,20 @@ ts_conf.setup {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
+  rainbow = {
+        enable = true,
+        extended_mode = true,
+        max_file_lines = nil,
+        colors = {
+        --[[ "IndentBlanklineIndent1", ]]
+        --[[ "IndentBlanklineIndent2", ]]
+        --[[ "IndentBlanklineIndent3", ]]
+        --[[ "IndentBlanklineIndent4", ]]
+        --[[ "IndentBlanklineIndent5", ]]
+        --[[ "IndentBlanklineIndent6", ]]
+        }
+    },
+
   indent = {
     enable = true,
   },

@@ -114,7 +114,7 @@ local normal_mappings = {
     },
     l = {
         name ="+LSP",
-        l = { function () 
+        l = { function ()
             local lines = require('lsp_lines')
             lines.toggle()
         end, "Toggle LSP Lines"},
@@ -124,9 +124,27 @@ local normal_mappings = {
       b = { "<cmd>Gitsigns toggle_current_line_blame<CR>", "Toggle Blame"},
       s = { "<cmd>Telescope git_status <cr>", "Git Status"},
       c = { "<cmd>Telescope git_commits <cr>", "Git Commits"},
-
-
-    }
+    },
+    d = {
+        name = "+Debug Adapter Protocol",
+        b = { "<cmd>DapToggleBreakpoint<cr>", "Toggle Break Point"},
+        s = { function ()
+            local widgets = require('dap.ui.widgets')
+            local sidebar = widgets.sidebar(widgets.scopes)
+            sidebar.open()
+        end, "Open sidebar" },
+        n = { "<cmd>DapStepOut<cr>", "Next Step"},
+    },
+    r = {
+        name ="+Rust",
+        e = { "<cmd>RustExpandMacro<cr>", "Expand Macro"},
+        r = { "<cmd>RustRunnables<cr>", "Run"},
+        d = { "<cmd>RustDebuggables<cr>", "Debug"},
+        k = { "<cmd>RustMoveItemUp<cr>", "Move Item Up"},
+        j = { "<cmd>RustMoveItemDown<cr>", "Move Item Down"},
+        h = {"<cmd>RustHoverActions<cr> <cmd>RustHoverActions<cr>", "Hover Actions Trigger"},
+        c = { "<cmd>RustOpenCargo<cr>", "Open Cargo.toml"},
+    },
 }
 wk.setup(conf)
 wk.register(normal_mappings, normal_opts)

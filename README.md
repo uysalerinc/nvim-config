@@ -1,1 +1,3 @@
-# [W.I.P] My Personal Neovim Configs
+# My Personal Neovim Configs
+
+

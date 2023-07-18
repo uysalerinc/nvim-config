@@ -18,6 +18,7 @@ local plugins = {
     'indentline',
     'oil',
 --    'copilot',
+    'rust-tools',
 }
 
 for _, plugin in pairs(plugins) do

@@ -5,11 +5,28 @@ return {
     'numToStr/Comment.nvim',
     'akinsho/toggleterm.nvim',
     'stevearc/oil.nvim',
+    'mfussenegger/nvim-dap',
 
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
     'norcalli/nvim-colorizer.lua',
     'lukas-reineke/indent-blankline.nvim',
+
+    -- Rust Stuff
+    {
+        'rust-lang/rust.vim',
+        ft = 'rust',
+        init = function ()
+           vim.g.rustfmt_autosave = 1
+        end
+    },
+    {
+        'simrat39/rust-tools.nvim',
+        ft = 'rust',
+        dependencies = {
+            'neovim/nvim-lspconfig',
+        },
+    },
 
     -- Git Stuff
     'lewis6991/gitsigns.nvim',
@@ -67,6 +84,7 @@ return {
             'nvim-treesitter/nvim-treesitter-refactor',
             'nvim-treesitter/nvim-treesitter-context',
             'JoosepAlviste/nvim-ts-context-commentstring',
+            'mrjones2014/nvim-ts-rainbow',
         }
 
     },
