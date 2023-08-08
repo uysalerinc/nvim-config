@@ -125,9 +125,19 @@ local normal_mappings = {
     },
     g = {
       name = "+Git",
-      b = { "<cmd>Gitsigns toggle_current_line_blame<CR>", "Toggle Blame"},
+      b = {
+            name = "+Blame",
+            b = {"<cmd>Gitsigns blame_line<CR>", "Blame Current Line"},
+            l = {"<cmd>Gitsigns toggle_current_line_blame<CR>", "Toggle Blame Line"},
+        },
       s = { "<cmd>Telescope git_status <cr>", "Git Status"},
       c = { "<cmd>Telescope git_commits <cr>", "Git Commits"},
+        t = {
+            name = "+Highligt",
+            n = {"<cmd>Gitsigns toggle_numhl<CR>", "Toggle Number Highligt"},
+            l = {"<cmd>Gitsigns toggle_linehl<CR>", "Toggle Line Highligt"},
+            w = {"<cmd>Gitsigns toggle_word_diff<CR>", "Toggle Word Diff Highligt"},
+        }
     },
     d = {
         name = "+Debug Adapter Protocol",
