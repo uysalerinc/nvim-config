@@ -122,6 +122,14 @@ local normal_mappings = {
             local lines = require('lsp_lines')
             lines.toggle()
         end, "Toggle LSP Lines"},
+
+        r = { "<cmd>Telescope lsp_references<cr>", "Referances" },
+        d = { "<cmd>Telescope lsp_definitions<cr>", "Definitions" },
+        s = {
+            name = "+Symbols",
+            w = { "<cmd>Telescope lsp_workspace_symbols<cr>", "Workspace Symbols" },
+            d = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
+        },
     },
     g = {
       name = "+Git",
