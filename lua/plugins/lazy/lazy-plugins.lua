@@ -105,7 +105,7 @@ return {
 
     {
         'goolord/alpha-nvim',
-        evet = 'VimEnter',
+        event = 'VimEnter',
         dependencies = {'nvim-tree/nvim-web-devicons'},
     },
 
