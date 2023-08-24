@@ -5,11 +5,14 @@ return {
     'numToStr/Comment.nvim',
     'akinsho/toggleterm.nvim',
     'stevearc/oil.nvim',
-
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
     'norcalli/nvim-colorizer.lua',
     'lukas-reineke/indent-blankline.nvim',
+
+
+    -- Discord
+    'andweeb/presence.nvim',
 
     -- Rust Stuff
     {

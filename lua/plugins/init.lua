@@ -20,6 +20,7 @@ local plugins = {
 --    'copilot',
     'rust-tools',
     'crates',
+    'presence',
 }
 
 for _, plugin in pairs(plugins) do
