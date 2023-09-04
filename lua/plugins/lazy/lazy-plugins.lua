@@ -10,6 +10,13 @@ return {
     'norcalli/nvim-colorizer.lua',
     'lukas-reineke/indent-blankline.nvim',
 
+    -- Markdown Preview
+    {
+      "iamcco/markdown-preview.nvim",
+      build = "cd app && npm install",
+      enabled = true,
+      ft = "markdown",
+    },
 
     -- Discord
     'andweeb/presence.nvim',
