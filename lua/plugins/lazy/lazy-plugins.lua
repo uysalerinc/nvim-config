@@ -62,11 +62,11 @@ return {
         'rcarriga/nvim-dap-ui',
         dependencies = 'mfussenegger/nvim-dap',
     },
-    --[[ {
+    {
         'zbirenbaum/copilot.lua',
         cmd = 'Copilot',
         event= 'InsertEnter',
-    }, ]]
+    },
 
     { -- Auto Completion
         'hrsh7th/nvim-cmp',

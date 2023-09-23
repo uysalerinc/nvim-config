@@ -17,7 +17,7 @@ local plugins = {
     'colorizer',
     'indentline',
     'oil',
---    'copilot',
+    'copilot',
     'rust-tools',
     'crates',
     'presence',
