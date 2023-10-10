@@ -8,7 +8,7 @@ return {
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
     'norcalli/nvim-colorizer.lua',
-    'lukas-reineke/indent-blankline.nvim',
+    {'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 
     -- Markdown Preview
     {

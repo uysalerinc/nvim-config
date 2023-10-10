@@ -1,7 +1,11 @@
-local ok, indent_blankline = pcall(require, 'indent_blankline')
+local ok, ibl = pcall(require, 'ibl')
 if not ok then
    return
 end
+local highlight = {
+    "CursorColumn",
+    "Whitespace",
+}
 vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent3 guifg=#98C379 gui=nocombine]]
@@ -13,14 +17,12 @@ vim.opt.list = true
 --[[ vim.opt.listchars:append "space:⋅" ]]
 vim.opt.listchars:append "eol:↴"
 
-indent_blankline.setup {
-    space_char_blankline = " ",
-    char_highlight_list = {
-        --[[ "IndentBlanklineIndent1", ]]
-        --[[ "IndentBlanklineIndent2", ]]
-        --[[ "IndentBlanklineIndent3", ]]
-        --[[ "IndentBlanklineIndent4", ]]
-        --[[ "IndentBlanklineIndent5", ]]
-        --[[ "IndentBlanklineIndent6", ]]
+--[[ ibl.setup {
+    indent = { highlight = highlight, char = "" },
+    whitespace = {
+        highlight = highlight,
+        remove_blankline_trail = false,
     },
-}
+    scope = { enabled = false },
+} ]]
+ibl.setup()
