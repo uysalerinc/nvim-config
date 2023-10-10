@@ -3,7 +3,9 @@ if not ok then
    return
 end
 local highlight = {
-    "CursorColumn",
+    "Function",
+    "Label",
+    --[[ "CursorColumn", ]]
     "Whitespace",
 }
 vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
@@ -17,12 +19,12 @@ vim.opt.list = true
 --[[ vim.opt.listchars:append "space:⋅" ]]
 vim.opt.listchars:append "eol:↴"
 
---[[ ibl.setup {
-    indent = { highlight = highlight, char = "" },
+ibl.setup {
+    --[[ indent = { highlight = highlight, char = "" }, ]]
     whitespace = {
         highlight = highlight,
         remove_blankline_trail = false,
     },
     scope = { enabled = false },
-} ]]
-ibl.setup()
+}
+--[[ ibl.setup() ]]

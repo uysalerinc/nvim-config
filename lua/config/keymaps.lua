@@ -33,7 +33,7 @@ local keymaps = {
     {'n', '<leader>bl', ':bnext<cr>', 'next buffer'},
     {'n', '<leader>bh', ':bprevious<cr>', 'previous buffer'},
     {'n', '<leader>bk', ':bd<cr>', 'kill buffer'},
-    
+
     -- NvimTree
     {'n', '<leader>e', ':NvimTreeToggle<cr>', 'Toggle Exploerer'},
 
