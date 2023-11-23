@@ -37,14 +37,14 @@ local keymaps = {
     -- NvimTree
     {'n', '<leader>e', ':NvimTreeToggle<cr>', 'Toggle Exploerer'},
 
-    {'n', '<leader>fs',":Silicon<cr>", 'Screenshot'},
+    {'n', '<leader>fs',":Silicon ~/screenshots/nvim/ --to-clipboard=true<cr>", 'Screenshot'},
             -- Visual --
 
    -- Text Movement
     {'v' , '<A-j>', ":m '>+1<cr>gv-gv", 'Quit'},
     {'v' , '<A-k>', ":m '>-2<cr>gv-gv", 'Quit'},
 
-    {'v', '<leader>fs',":'<,'>Silicon<cr>", 'Screenshot'},
+    {'v', '<leader>fs',":'<,'>Silicon ~/screenshots/nvim/ --to-clipboard=true<cr>", 'Screenshot'},
 
             -- Insert --
 
