@@ -37,18 +37,21 @@ local keymaps = {
     -- NvimTree
     {'n', '<leader>e', ':NvimTreeToggle<cr>', 'Toggle Exploerer'},
 
+    {'n', '<leader>fs',":Silicon<cr>", 'Screenshot'},
             -- Visual --
 
    -- Text Movement
     {'v' , '<A-j>', ":m '>+1<cr>gv-gv", 'Quit'},
     {'v' , '<A-k>', ":m '>-2<cr>gv-gv", 'Quit'},
 
+    {'v', '<leader>fs',":'<,'>Silicon<cr>", 'Screenshot'},
+
             -- Insert --
 
     -- Fast exit insert mode 
     {'i' , 'jk', '<ESC>', 'Fast exit with jk'},
 
-    {'n', '<leader>f', ':noh<cr>', 'clear search highlight'},
+    {'n', '<leader>cs', ':noh<cr>', 'clear search highlight'},
 
 }
 

@@ -107,6 +107,8 @@ return {
         }
 
     },
+            -- Silicon (Screenshot tool)
+     {'segeljakt/vim-silicon'},
             -- Color Schemas
     {'catppuccin/nvim', name = 'catppuccin', priority = 1000},
     {'dracula/vim', lazy = false},
@@ -120,13 +122,13 @@ return {
     },
 
     {
-  "folke/which-key.nvim",
-  event = "VeryLazy",
-  init = function()
-    vim.o.timeout = true
-    vim.o.timeoutlen = 300
-  end,
-  opts = {}
-},
+      "folke/which-key.nvim",
+      event = "VeryLazy",
+      init = function()
+        vim.o.timeout = true
+        vim.o.timeoutlen = 300
+        end,
+        opts = {}
+    },
 
 }
