@@ -14,10 +14,10 @@ vim.cmd [[highlight rainbowcol1 guifg=#C678DD gui=nocombine]]
 ts_conf.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
   ensure_installed = { "c", "lua", "vim", "vimdoc", "query" },
-  context_commentstring = {
+  --[[ context_commentstring = {
     enable  = true,
     enable_autocmd = false,
-  },
+  }, ]]
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
