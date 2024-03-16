@@ -112,6 +112,7 @@ local normal_mappings = {
     t = {
         name = "+Telescope",
         f = { "<cmd>Telescope find_files<cr>", "Find File" },
+        l = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
         r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
         n = { "<cmd>enew<cr>", "New File" },
         e = "Edit File",
