@@ -13,9 +13,18 @@ return {
     -- Markdown Preview
     {
       "iamcco/markdown-preview.nvim",
+      cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
       build = "cd app && npm install",
-      enabled = true,
-      ft = "markdown",
+      init = function()
+        vim.g.mkdp_filetypes = { "markdown" }
+        --[[ print("miyav") ]]
+      end,
+      ft = { "markdown" },
+      config = function()
+        vim.g.mkdp_auto_close = 0
+        vim.g.mkdp_combine_preview = 1
+        vim.g.mkdp_echo_preview_url = 1
+      end
     },
 
     -- Discord
@@ -130,5 +139,8 @@ return {
         end,
         opts = {}
     },
+            -- Transparent Background
+
+    'tribela/vim-transparent',
 
 }
