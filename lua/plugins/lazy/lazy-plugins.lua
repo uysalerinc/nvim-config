@@ -59,7 +59,7 @@ return {
             'neovim/nvim-lspconfig',
             'folke/trouble.nvim',
             'ray-x/lsp_signature.nvim',
-            'Maan2003/lsp_lines.nvim',
+            --'Maan2003/lsp_lines.nvim',
             {'williamboman/mason.nvim', config = true},
             'williamboman/mason-lspconfig.nvim',
             'jose-elias-alvarez/null-ls.nvim',
