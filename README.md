@@ -1,6 +1,9 @@
 # My Personal Neovim Configs
 
 ## Dependency List
+
+|  | |  |
+| ------------ | ------------ | --------- |
 | curl | wget | unzip |
 | xclip | npm | ripgrep|
 
