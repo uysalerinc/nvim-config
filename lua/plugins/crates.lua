@@ -130,14 +130,14 @@ crates.setup({
             jump_back = { "<c-o>", "<C-RightMouse>" },
         },
     },
-    src = {
+    completion = {
         insert_closing_quote = true,
         text = {
             prerelease = "  pre-release ",
             yanked = "  yanked ",
         },
         coq = {
-            enabled = false,
+            enabled = true,
             name = "Crates",
         },
     },
