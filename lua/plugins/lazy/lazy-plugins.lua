@@ -77,7 +77,7 @@ return {
             --'Maan2003/lsp_lines.nvim',
             {'williamboman/mason.nvim', config = true},
             'williamboman/mason-lspconfig.nvim',
-            'jose-elias-alvarez/null-ls.nvim',
+            'nvimtools/none-ls.nvim',
         }
     },
 
